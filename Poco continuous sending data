@@ -45,6 +45,7 @@ int main()
     const int port = 4001;
 
     Poco::Net::HTTPClientSession session(host, port);
+    session.setAlive(true);
 
     // prepare path
     std::string path;
